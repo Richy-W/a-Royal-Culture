@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Richard Wren">
+	<meta name="description" content="Get to know the splendor of Baroque architecture at Würzburg Residenz.">
+	<meta name="keywords" content="Germany, Frankfurt, UNESCO, Baroque, architecture, monarchs, destination">
+	<title>A Royal Culture</title>
+	<link rel="stylesheet" type="text/css" href="fgunesco.css">
+	<link rel="icon" type="image/favicon.ico" href="images/palace.ico">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+<!-- *********** Wrapper ******* -->
+	<div id="wrapper">
+
+<!-- ******* page header ****** -->
+
+		<header>
+			<h1>Würzburg Residenz</h1>
+		</header>
+
+<!-- ******* Navigation ******* -->
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="versailles.html">Versailles</a>
+			<a href="fontainebleau.html">Fontainebleau</a>
+			<a href="wartburg.html">Wartburg</a>
+			<a href="wurzburg.html">Würzburg</a>
+			<a href="learnmore.html">Learn More</a>
+		</nav>
+
+<!-- ******* main content area ****** -->
+		<main>
+
+			<div class="slideshow-container">
+
+  
+  <div class="photos fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/wurzburg/wurzburggrand.jpg" style="width:100%" alt="wurzburg from a distance">
+    <div class="text">Würzburg Residenz</div>
+  </div>
+
+  <div class="photos fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/wurzburg/wurzburggarden.jpg" style="width:100%" alt="wurzburg gardens">
+    <div class="text">View from the Garden at Würzburg</div>
+  </div>
+
+  <div class="photos fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/wurzburg/wurzburggate.jpg" style="width:100%" alt="wurzburg main gate">
+    <div class="text">Würzburg Gate</div>
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div class="clicker">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+		var slideIndex = 1;
+	showSlides(slideIndex);
+
+
+		function plusSlides(n) {
+  	showSlides(slideIndex += n);
+}
+
+
+		function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+	function showSlides(n) {
+ 		 var i;
+  		var slides = document.getElementsByClassName("photos");
+  		var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      		slides[i].style.display = "none";
+  }
+  			for (i = 0; i < dots.length; i++) {
+      		dots[i].className = dots[i].className.replace(" active", "");
+  }
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+}
+	</script>
+
+	<div id="text2"><h2>Würzburg Residenz</h2></div>
+
+	<div id="text3">
+		<p>Located approximately 78 miles southeast of Frankfurt, Germany, is arguably one of the most incredible examples of German Baroque architecture in existence today. Würzburg Residenz began as a humble palace in the early 18th century, and was quickly expanded upon by the Prince-Bishop Johann Philipp Franz von Schönborn, who wanted a palace that rivaled the likes of Schönbrunn and Versailles. In the spring of 1720, castle construction began, but was halted less than five years later by Christoph Franz von Hutten, who had taken the position of Prince-Bishop following Johann Philipp Franz’ death in 1724. Luckily for the nobility (and for architectural enthusiasts today), building recommenced in 1730 after the death of Christoph Franz, and continued uninterrupted until 1746. It resumed again three years later, and was finally completed in 1780 (though interior decoration would continue to occur and evolve well into the 19th century.</p>
+		
+		<br>
+		<br>
+
+		<p>The palace became a popular destination for many other European monarchs during their travels through Germany. Most notable were Napoleon Bonaparte (who signed a declaration of war against Prussia during one of his stays), his wife Marie Louise in the early 1800s, and the Queen Victoria and Prince Albert in 1845. Though residency and stays no longer occur in the palace, thousands of tourists each year flock to the castle to admire its grandeur and see the many beautiful works of arts housed inside. The price for a guided tour (offered daily, every twenty to thirty minutes during open hours) is quite reasonable, but the palace gardens offer an incredibly beautiful and free alternative as well.</p>
+
+		<br>
+		<br>
+
+		<p><a href="https://www.wuerzburg.de/en/index.html">Würzburg</a> was established as a UNESCO World Heritage Site in 1981.</p>
+
+
+			
+		</main>
+
+<!-- *********** footer ************ -->		
+
+		<footer>
+			<div>
+			<a href="mailto:richy.wren@gmail.com">Richy.wren@gmail.com</a>
+			<span id="desktop">Phone number: 405-555-5555</span>
+			<a id="mobile" href="tel:405-555-5555">405-555-5555</a>
+			<p class="disclaimer">Disclaimer: Oklahoma City Community College does not necessarily endorese the content or the respectie links of this web page.</p>
+			<script>
+				document.write("<p>This page was last modified on: ");
+				document.write(document.lastModified);
+				document.write("</p>");
+			</script>
+			</div>
+		</footer>
+
+	</div>
+</body>

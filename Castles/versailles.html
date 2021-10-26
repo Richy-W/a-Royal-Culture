@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Richard Wren">
+	<meta name="description" content="Behold the majesty of château de Versailles and the glory of the Sun king.">
+	<meta name="keywords" content="Sun, king, history, Revolution, majestic, Louis">
+	<title>A Royal Culture</title>
+	<link rel="stylesheet" type="text/css" href="fgunesco.css">
+	<link rel="icon" type="image/favicon.ico" href="images/palace.ico">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+<!-- *********** Wrapper ******* -->
+	<div id="wrapper">
+
+<!-- ******* page header ****** -->
+
+		<header>
+			<h1>Château de Versailles</h1>
+		</header>
+
+<!-- ******* Navigation ******* -->
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="versailles.html">Versailles</a>
+			<a href="fontainebleau.html">Fontainebleau</a>
+			<a href="wartburg.html">Wartburg</a>
+			<a href="wurzburg.html">Würzburg</a>
+			<a href="learnmore.html">Learn More</a>
+		</nav>
+
+<!-- ******* main content area ****** -->
+		<main>
+
+<div class="slideshow-container">
+
+  
+  <div class="photos fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/versailles/versaillesmain.jpg" style="width:100%" alt="versailles entrance">
+    <div class="text">Château de Versailles</div>
+  </div>
+
+  <div class="photos fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/versailles/versaillesgardens.jpg" style="width:100%" alt="gardens of versailles">
+    <div class="text">The Gardens at Versailles</div>
+  </div>
+
+  <div class="photos fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/versailles/queenshamlet1.jpg" style="width:100%" alt="Marie Antoinette's personal Hamlet">
+    <div class="text">The Queen's Hamlet</div>
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div class="clicker">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+		var slideIndex = 1;
+	showSlides(slideIndex);
+
+
+		function plusSlides(n) {
+  	showSlides(slideIndex += n);
+}
+
+
+		function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+	function showSlides(n) {
+ 		 var i;
+  		var slides = document.getElementsByClassName("photos");
+  		var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      		slides[i].style.display = "none";
+  }
+  			for (i = 0; i < dots.length; i++) {
+      		dots[i].className = dots[i].className.replace(" active", "");
+  }
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+}
+	</script>
+
+			
+
+			<div id="text2"><h2>Château de Versailles</h2></div>
+			
+				
+			<div id="text3"><p>The Palace of Versailles is a 72,182 sqft château nestled in the countryside on 1,070 hectares of land, and is situated just twelve miles outside the city center of Paris. With almost 2,000 acres of gardens, six primary structures (including the palace itself), and even a small replica village, this estate is filled with some of the most elaborate and whimsical structures of the 17th century.</p> 
+<br>
+				<p>Upon seeing the grand façades today, it is hard to believe that this place began as a humble two-story hunting lodge for King Louis XIII in 1623. However, it was not long before the majestic transformations began, and in 1631 the King began his expansions on the property to create a larger château with gardens and a park. Each subsequent monarch thereafter placed their mark on the estate, transforming and tweaking it to their desired specifications and style. Finally, in the mid-late 1700’s, King Louis XVI (the great-grandson of King Louis XIII) inherited the property and began the extensive renovations to appease not only the guests of this palace, but his ego...</p>
+<br>
+<br>
+				<p>Louis XVI and his wife Marie Antoinette are probably the most well-known inhabitants of Versailles, as it is their choices in decor and architecture that are still seen today. Known as the self-proclaimed “Sun King”, Louis XVI fancied himself an embodiment of the Greek god Apollo, the Sun god, and had many features designed on the estate to give that impression. Gold adorned the palace from ceiling to floor, coating the fixtures in a brilliant, yellow glow. A magnificent Hall of Mirrors was constructed with floor-to-ceiling windows on one side, and equally large mirrors on the other so that the King could be illuminated by the sun’s rays no matter where he stood in the room. Marie on the other hand was young, and grew bored of the palace life of a monarch. She longed to have a space of her own in which she could entertain her equally youthful friends, and pretend to belong to a different life. Known as the Queen’s Hamlet, a model of a local village was constructed on the grounds, and contained the following:</p>
+<br>
+<br>
+		
+			<ul>
+				<li>A Millhouse</li> 
+				<li>The Queen’s House</li>
+				<li>A Boudoir</li> 
+				<li>Billiard</li> 
+				<li>Stove Room</li>
+				<li>Working Dairy</li>
+				<li>Working Farm</li>
+			</ul>
+<br>
+<br>
+
+				<p>In 1789, the French Revolution had gained momentum, and the royal family was forced to leave Versailles forever. Several leaders of France tried to restore the palace and to return to the grounds with the intent of establishing their permanent homes there, but the large estate had fallen into extreme disrepair. Bit-by-bit each ruler was able to make changes over the years, but the greatest restoration efforts would not take place until the end of the 19th century/early 20th century, and these restorations are ongoing today.</p> 
+
+				<br>
+				<br>
+
+				<p><a href="https://en.chateauversailles.fr/">The Palace of Versailles</a> was listed as a UNESCO World Heritage Site in 1979.</p>
+
+		</main>
+
+<!-- *********** footer ************ -->		
+
+		<footer>
+			<div>
+			<a href="mailto:richy.wren@gmail.com">Richy.wren@gmail.com</a>
+			<span id="desktop">Phone number: 405-555-5555</span>
+			<a id="mobile" href="tel:405-555-5555">405-555-5555</a>
+			<p class="disclaimer">Disclaimer: Oklahoma City Community College does not necessarily endorese the content or the respectie links of this web page.</p>
+			<script>
+				document.write("<p>This page was last modified on: ");
+				document.write(document.lastModified);
+				document.write("</p>");
+			</script>
+			</div>
+		</footer>
+
+	</div>
+</body>

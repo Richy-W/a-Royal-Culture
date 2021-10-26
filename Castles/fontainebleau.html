@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Richard Wren">
+	<meta name="description" content="Discover the beauty of Château de Fontainebleau and the restorations that saved it">
+	<meta name="keywords" content="restoration, France, Paris, beauty, historic, time-capsule">
+	<title>A Royal Culture</title>
+	<link rel="stylesheet" type="text/css" href="fgunesco.css">
+	<link rel="icon" type="image/favicon.ico" href="images/palace.ico">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+<!-- *********** Wrapper ******* -->
+	<div id="wrapper">
+
+<!-- ******* page header ****** -->
+
+		<header>
+			<h1>Château de Fontainebleau</h1>
+		</header>
+
+<!-- ******* Navigation ******* -->
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="versailles.html">Versailles</a>
+			<a href="fontainebleau.html">Fontainebleau</a>
+			<a href="wartburg.html">Wartburg</a>
+			<a href="wurzburg.html">Würzburg</a>
+			<a href="learnmore.html">Learn More</a>
+		</nav>
+
+<!-- ******* main content area ****** -->
+	<main>
+			<div class="slideshow-container">
+
+  
+  <div class="photos fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/fontainebleau/fontainebleaufull.jpg" style="width:100%" alt="fontainebleau from a distance">
+    <div class="text">Château de Fontainebleau</div>
+  </div>
+
+  <div class="photos fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/fontainebleau/fontainebleau2.jpg" style="width:100%" alt="Fontainebleau and pond">
+    <div class="text">The Castle Moat</div>
+  </div>
+
+  <div class="photos fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/fontainebleau/fontainebleauinterior.jpg" style="width:100%" alt="Inside Fontainebleau">
+    <div class="text">Fontainebleau Frescoes</div>
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div class="clicker">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+		var slideIndex = 1;
+	showSlides(slideIndex);
+
+
+		function plusSlides(n) {
+  	showSlides(slideIndex += n);
+}
+
+
+		function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+	function showSlides(n) {
+ 		 var i;
+  		var slides = document.getElementsByClassName("photos");
+  		var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      		slides[i].style.display = "none";
+  }
+  			for (i = 0; i < dots.length; i++) {
+      		dots[i].className = dots[i].className.replace(" active", "");
+  }
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+}
+	</script>
+
+
+			<div id="text2"><h2>Château de Fontainebleau</h2></div>
+
+<div id="text3"><p>Located just over thirty miles southeast of Paris, Château de Fontainebleau has been home to two emperors and thirty four kings over the span of eight centuries. Built in 1137 as a humble fortress, its additions and upgrades through the years have transformed it into one of the largest, and arguably most beautiful royal châteaux in France today.</p> 
+<br>
+<br>
+<p>Boasting over 1,500 rooms, and sparing no expense in décor, the Château de Fontainebleau stands as a living time-capsule for the artistry of the 16th through 19th centuries. Brilliant tapestries, ornate carvings, and immaculate parquet flooring welcome visitors and invite exploration of this 53,000 sqft palace, and were it not for the designated tour areas, one could easily get lost in the labyrinth of Renaissance murals, impressively long halls, and hidden doors.</p> 
+<br>
+<br>
+<p>Having suffered neglect and fallen to disrepair, the palace was restored in the sixteenth century by King Francois I, and his vision is the backbone for most of what we see today. A few other calamities including a fire in the mid-1800s have caused necessity for the rebuild and restoration of parts of the château, but the most expansive renovations in modern time were overseen by French President Charles DeGaulle and his Minister of Culture, Mr. Andre Malraux between 1964 and 1968. An additional restoration of the theater (created by Napoleon III in the Second Empire) began in 2007 and was inaugurated in April of 2014.</p> 
+<br>
+<br>
+<p>The façades of the <a href="https://www.chateaudefontainebleau.fr/en/">Château de Fontainebleau</a> were recognized as historic monuments and were placed under protection of the government in 1913. In 1927, the château was turned into a national museum. Finally in 1981, it was recognized as a UNESCO World Heritage Site, and remains open to the public for tours today.</p>
+</div>
+
+
+			
+		</main>
+
+<!-- *********** footer ************ -->		
+
+		<footer>
+			<div>
+			<a href="mailto:richy.wren@gmail.com">Richy.wren@gmail.com</a>
+			<span id="desktop">Phone number: 405-555-5555</span>
+			<a id="mobile" href="tel:405-555-5555">405-555-5555</a>
+			<p class="disclaimer">Disclaimer: Oklahoma City Community College does not necessarily endorese the content or the respectie links of this web page.</p>
+			<script>
+				document.write("<p>This page was last modified on: ");
+				document.write(document.lastModified);
+				document.write("</p>");
+			</script>
+			</div>
+		</footer>
+
+	</div>
+</body>

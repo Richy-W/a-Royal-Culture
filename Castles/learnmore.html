@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Richard Wren">
+	<meta name="description" content="Sign up for alerts and news about A Royal Culture">
+	<meta name="keywords" content="Sign, alerts, learn, know, email, comments">
+	<title>A Royal Culture</title>
+	<link rel="stylesheet" type="text/css" href="fgunesco.css">
+	<link rel="icon" type="image/favicon.ico" href="images/palace.ico">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+
+	<!-- ******** textbox validate ********** -->
+
+	<script>
+		function validateForm() {
+			if (document.getElementById("emailList").value == "") {
+            alert("Email is required");
+            return false;
+        }else if(document.getElementById("loginPassword").value == "") {
+        	alert("you must create a password to post.");
+        	return false
+        }
+		}
+	</script>
+
+	<!-- ********** check box ********* -->
+
+	<script>
+		if($("#consent").is(':checked')){
+			return true
+		}
+		else {
+			return false
+		}
+	</script>
+
+</head>
+
+<body>
+
+<!-- *********** Wrapper ******* -->
+	<div id="wrapper">
+
+<!-- ******* page header ****** -->
+
+		<header>
+			<h1>Would you like to know more?</h1>
+		</header>
+
+<!-- ******* Navigation ******* -->
+		<nav>
+			
+			<a href="index.html">Home</a>
+			<a href="versailles.html">Versailles</a>
+			<a href="fontainebleau.html">Fontainebleau</a>
+			<a href="wartburg.html">Wartburg</a>
+			<a href="wurzburg.html">Würzburg</a>
+			<a href="learnmore.html">Learn More</a>
+		</nav>
+
+<!-- ******* main content area ****** -->
+		<main>
+
+			<div id="formpage">
+			<h2>Each site has a unique story!</h2>
+
+			<form method="post" onsubmit="return validateForm();" action="http://apollo1.occc.edu/genericFormHandler.php" id="" name="">
+
+			<div id="radio">
+			<p>Have you ever visited a <a href="https://whc.unesco.org/en/list/">UNESCO</a> site?</p>
+			<input type="radio" id="yes" name="visited" value="yes" tabindex="1" accesskey="y">
+			<label for="yes">Yes</label>
+			<input type="radio" name="visited" id="no" value="no" tabindex="2" accesskey="n">
+			<label for="no">No</label> 
+			<input type="radio" id="dontknow" name="visited" value="dontknow" tabindex="3" accesskey="m">
+			<label for="dontknow">Not Sure</label>
+			</div><br>
+
+			<div id="favorit">
+				<p>Of the four presented here which would would you like to visit?</p>
+				<select name="favorit" tabindex="4" accesskey="v">
+					<option value="versailles">Versailles</option>
+					<option value="fontainebleau">Fontainebleau</option>
+					<option value="wartburg">Wartburg</option>
+					<option value="wurzburg">Würzburg</option>
+					<option value="none">None of them really</option>
+				</select>
+			</div><br>
+
+			<div id="joinEmail">
+				<label for="emailList">Username is your email</label>
+				<input type="email" name="emailList" tabindex="5" accesskey="e">
+			</div><br>
+
+			<div id="makepassword">
+				<label for="loginPassword">make a password!</label>
+				<input type="password" name="loginPassword" tabindex="6" accesskey="p">
+			</div><br>
+
+			<div id="formCertify">
+				<p>I consent to recieving emails</p>
+				<input type="checkbox" name="consent" id="consent" tabindex="7" accesskey="x">
+			</div>
+
+			<div id="commentBox">
+				<label for="yourComments">We would love to hear from you!</label>
+				<textarea name="yourComments" id="yourComments" rows="3" cols="20" tabindex="8" accesskey="c"></textarea>
+			</div>
+
+			<input type="submit" name="submitButton" tabindex="9" accesskey="s">
+			<input type="reset" name="resetButton" tabindex="10" accesskey="r">
+
+		</form>
+
+		</div>	
+
+
+		</main>
+
+<!-- *********** footer ************ -->		
+
+		<footer>
+			<div>
+			<a href="mailto:richy.wren@gmail.com">Richy.wren@gmail.com</a>
+			<span id="desktop">Phone number: 405-555-5555</span>
+			<a id="mobile" href="tel:405-555-5555">405-555-5555</a>
+			<p class="disclaimer">Disclaimer: Oklahoma City Community College does not necessarily endorese the content or the respectie links of this web page.</p>
+			<script>
+				document.write("<p>This page was last modified on: ");
+				document.write(document.lastModified);
+				document.write("</p>");
+			</script>
+			</div>
+		</footer>
+
+	</div>
+</body>
